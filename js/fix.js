@@ -3,7 +3,9 @@ var hideHeaderControls = true;
 function displayControl(){
 
     if(hideHeaderControls){
-        console.log('if');
+        
+        $('header .container > div').fadeOut();
+
         $('header input').css({
             "border": "0",
             "padding": "0",
@@ -11,11 +13,16 @@ function displayControl(){
         })
 
     }else{
-        console.log('else');
+        
+        $('header .container > div').fadeIn();
+
         $('header input').css({
             "border": "1px",
             "padding": "10px 10px 10px 10px",
             "height": "40"
+        })
+        $('header input[type="text"]').css({
+            "padding-left": "40px"
         })
 
     }
@@ -24,10 +31,9 @@ function displayControl(){
 
 $(document).ready(function(){
     
-    displayControl(!hideHeaderControls);
+    $('header .container > div').hide();
 
     $('#subscribe-btn').click(function(){
-        console.log('else');
         hideHeaderControls = !hideHeaderControls
         displayControl(hideHeaderControls);
     });

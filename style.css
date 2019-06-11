@@ -265,8 +265,8 @@ form textarea {
   border-radius: 3px;
   color: #92601e;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  -webkit-transition: .3s ease;
-          transition: .3s ease; }
+  -webkit-transition: .6s ease;
+          transition: .6s ease; }
   .button:hover, form input[type="submit"]:hover, form button:hover, form input[type="reset"]:hover, .contact-form input[type="submit"]:hover {
     background-color: #ffc06f; }
 
