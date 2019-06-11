@@ -36,60 +36,66 @@
 					</a>
 					<!-- ThinkBIG Logo End-->
 
-					<!-- Subscribe START-->
-					<div class="col-md-2" style="float: right">
-						<div class="contact-form">
-							<input type="submit"
-								   disabled=disabled
-								   value="Subscribe"
-								   style="display: block; margin-bottom:14px; width: 100%; height:90px ">
-						</div>
-					</div>
-					<!-- Subscribe End-->
+					<div>
 
-					<!-- EMAIL & Authentication Token Handling START-->
-					<div class="col-md-2" style="float: right">
-						<div class="contact-form">
-							<input type="submit" value="Send Auth Token"
-								   style="display: block; margin-bottom:
-									   14px; width: 100%">
-
-							<input type="submit" value="Test Auth Token"
-								   style="display: block; width: 100%">
+						<div>
+							<div class="contact-form">
+								<input id="email_input" type="text" class="email" placeholder="enter your email">
+								<input type="submit" value="Send Auth Token"style="display: block; margin-bottom:14px; width: 100%">
+							</div>
 						</div>
+						<!-- EMAIL & Authentication Token Handling END-->
+
+						<!-- EMAIL & Authentication Token Handling START-->
+						<div>
+							<div class="contact-form">
+								<input id="token_input" type="text" class="email" placeholder="enter your verification token">
+								<input type="submit" value="Test Auth Token" style="display: block; width: 100%">
+							</div>
+						</div>
+
+						<!-- Subscribe START-->
+						<div>
+							<div class="contact-form">
+								<input type="submit"
+									   disabled=disabled
+									   value="Subscribe"
+									   style="display: block; margin-bottom:14px; width: 100%; height:90px ">
+							</div>
+						</div>
+						<!-- Subscribe End-->
+
 					</div>
 
-					<div class="col-md-5" style="float: right">
-						<div class="contact-form">
-							<input id="email_input" type="text" class="email" placeholder="enter your email">
-							<input id="token_input" type="text" class="email" placeholder="enter your verification token">
-						</div>
-					</div>
-					<!-- EMAIL & Authentication Token Handling END-->
 				</div>
 
 			</header>
 
 
 			<main class="main-content">
+
+				<aside>
+					<!-- Subscribe START-->
+					
+					<div>
+						<!-- <input 	type="submit"
+								disabled=disabled
+								
+								value="Subscribe"
+								style="display: block; margin-bottom:14px; width: 100%; height:90px "> -->
+								<button id="subscribe-btn">Subscribe</button>
+					</div>
+					
+					<!-- Subscribe End-->
+
+					
+				</aside>
+		
 				<div class="container">
 					<div class="page">
 
 
-						<div class="filters">
-							<select name="#" id="#" placeholder="Choose Category">
-								<option value="#">Action</option>
-								<option value="#">Drama</option>
-								<option value="#">Fantasy</option>
-								<option value="#">Horror</option>
-								<option value="#">Adventure</option>
-							</select>
-							<select name="#" id="#">
-								<option value="#">2012</option>
-								<option value="#">2013</option>
-								<option value="#">2014</option>
-							</select>
-
+						<div class="search">
 							<form class="search-form" style="float: right">
 								<input id="search_input" type="text" placeholder="Search...">
 								<button type="button"><i class="fa fa-search"></i></button>
@@ -107,6 +113,7 @@
 					</div>
 
 				</div> <!-- .container -->
+
 			</main>
 
 
@@ -190,6 +197,7 @@
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/capp.js"></script>
+		<script src="js/fix.js"></script>
 
 	</body>
 

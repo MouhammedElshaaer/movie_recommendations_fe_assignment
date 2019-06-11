@@ -487,7 +487,7 @@ ul.arrow {
 
 
 .contact-form {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   *zoom: 1; }
   .contact-form:after {
     content: " ";
@@ -506,8 +506,8 @@ ul.arrow {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
     background-repeat: no-repeat;
     background-position: 10px 15px;
-    -webkit-transition: .3s ease;
-            transition: .3s ease;
+    -webkit-transition: .6s ease;
+            transition: .6s ease;
     outline: none; }
     .contact-form input:not([type="submit"]):focus, .contact-form input:not([type="submit"]):hover, .contact-form textarea:focus, .contact-form textarea:hover {
       border-color: #ffaa3c; }
