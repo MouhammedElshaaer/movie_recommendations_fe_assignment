@@ -1,6 +1,6 @@
 
 body{
-    padding: 20px;
+    padding: 50px;
 }
 
 .movie-list .movie .movie-title {
@@ -122,6 +122,32 @@ header{
                 overflow-y: scroll;
             }
         }
+    }
+
+    & .container{
+
+        & .page{
+            display: grid;
+            grid-template-columns: 1fr;
+
+            // outline: 1px solid red;
+
+            & > div:nth-child(3){
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: center;
+
+                i{
+                    font-size: 40px;
+                    color: #ffaa3c;
+                }
+                i:hover{
+                    font-size: 40px;
+                    color: #ffc06f;
+                }
+            }
+        }
+
     }
 }
 

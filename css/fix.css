@@ -1,5 +1,5 @@
 body {
-  padding: 20px;
+  padding: 50px;
 }
 
 .movie-list .movie .movie-title {
@@ -135,6 +135,31 @@ header .container > div input {
 
 .main-content aside > :nth-child(2) > div:hover, .main-content aside > :nth-child(2) > div:hover {
   overflow-y: scroll;
+}
+
+.main-content .container .page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.main-content .container .page > div:nth-child(3) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.main-content .container .page > div:nth-child(3) i {
+  font-size: 40px;
+  color: #ffaa3c;
+}
+
+.main-content .container .page > div:nth-child(3) i:hover {
+  font-size: 40px;
+  color: #ffc06f;
 }
 
 .movie {
